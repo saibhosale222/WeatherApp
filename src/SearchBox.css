@@ -1,0 +1,58 @@
+.Search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.2);
+}
+
+.Search-box h2 {
+  margin: 0;
+  color: #152238;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Search-box form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.Search-box .MuiTextField-root {
+  flex: 1;
+  min-width: 0;
+}
+
+.error-message {
+  width: 100%;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #9f1239;
+  background: #ffe4e6;
+  border: 1px solid #fecdd3;
+}
+
+@media (max-width: 560px) {
+  .Search-box {
+    padding: 22px;
+  }
+
+  .Search-box form {
+    flex-direction: column;
+  }
+
+  .Search-box .MuiTextField-root,
+  .Search-box button {
+    width: 100%;
+  }
+}
